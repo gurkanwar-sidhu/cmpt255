@@ -1,0 +1,33 @@
+/*  301290044 gss28 Gurkanwar Sidhu
+**  a4.cpp
+**  Assignment 4, CMPT-225
+**
+**  Reads a sequence of integers (in the range of int's) from standard in;
+**  It is interpreted as two lists, separated by a single 0
+**/
+
+Line 9: 	Included the stl library for List, refrencing section 6.2.4 of 				the textbook.
+
+Line 16: 	creating a List to store the integers from the input file
+
+LIne 18-28:	Cin an initial value from the file to initiate the while loop 
+			as well as to create a test for the corner case of file 			beginning with 0
+
+Line 30-33: initiate a while loop which continues until the 0 seperating 
+			the two lists is reached and continously pushing the values to
+			the back of the List
+
+Line 35-37:	Once the 0 value seperating the two lists has been detected pop
+			the value from the List
+
+Line 39-42: initiates a while loop that runs until the end of the file is 
+			reached, the loop reads in the values and continuously removes
+			any value that also appears in the List
+
+Line 44-47:	Checks the corner case of both lists being identical
+
+Line 50-57: Sets a while loop that checks for the max value remaining in 
+			the List and continuously pops the front of the List until
+			only the max value is left.
+
+Time Complexity of O(n^2), due to the search for the max value through the list, with only linear time required for initiating and filling in the list. Completed with references to chapter 6 of the textbook.
